@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+
+ <head>
+    <title>Giphy</title>
+    <style>
+      body {
+        background-color: aliceblue;
+      }
+      img {
+        border-radius: 4px;
+        height: 40px;
+        width: 40px;
+      }
+      
+    </style>
+    <script src="lib/jquery.js"></script>
+   
+  </head>
+  <body>
+ 
+    <div id="app">
+        <h1>Giphy</h1>
+        <p>All users are sharing giphies. Sorry ... </p>
+        <form action="/logout" method="get">
+    
+    		<div>
+     			<input type="submit" value="Logout">
+    		</div>
+		</form>
+
+        <form id="generate">
+             <label>enter text</label>
+             <input id='textid' type="text" name="in" value="whatever" />
+             <button type="submit">Generate</button>
+             <button type='button' id='gensave'>Generate and save</button>
+        </form>
+        <div id='image'></div>
+
+        <h1>Treding now</h1>
+    	<table>
+	    	<tbody id='trending'>
+	    	</tbody>
+	  	</table>
+    
+
+
+    </div>
+   
+  
+    <script src="src/app.js"></script>
+    	
+ 	
+
+   
+  </body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+ 
+<html>
+	<head>
+	    <title>Giphy</title>
+	    <style>
+	      body {
+	        background-color: aliceblue;
+	      }
+	    
+	    </style>
+	  
+	</head>
+<body>
+<h2>Log in</h2>
+
+<form action="/login" method="post">
+    <div>
+      <label for="username">Username:</label>
+      <input id="username" type="text" name="username">
+    </div>
+    <div>
+      <label for="password">Password:</label>
+      <input id="password" type="password" name="password">
+    </div>
+    <div>
+      <input type="submit" value="Login">
+    </div>
+</form>
+<p>
+  <a href="/signup">Create an Account &rarr;</a>
+<p>
+
+
+<a href='https://github.com/login/oauth/authorize?client_id=9cabef3567bc1a077a42&allow_signup=true&redirect_uri=http://localhost:3000/oauth'>Login via github</a>
+</body>
+
+</html>
