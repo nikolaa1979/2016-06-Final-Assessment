@@ -26,7 +26,7 @@ $(document).ready(function () {
       						var giphy = results.data [i + j];
 	      					row.append (
 									'<td>' +
-		          					'<img src=' +  giphy.images.fixed_height_small_still.url + '>' +
+		          					'<img src=' +  giphy.images.fixed_height_small.url + '>' +
 		        					'</td>' 
 
 	      						)
@@ -54,7 +54,7 @@ $(document).ready(function () {
     				var giphy = results.data;
         			console.log('giphy generaed',results);
         			$('#image').empty ();
-        			$('#image').append ('<img src=' +  giphy.images.fixed_height_small_still.url + '>');
+        			$('#image').append ('<img src=' +  giphy.images.fixed_height_small.url + '>');
         			cb (null, giphy)
                   
     			},
